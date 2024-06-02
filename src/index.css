@@ -1,0 +1,170 @@
+/* index.css */
+
+/* Resetting default styles */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	line-height: 1.6;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-color: #fff;
+	color: #000;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: "";
+	content: none;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+pre {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+/* Header.css */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+}
+
+.nav-buttons,
+.lang-buttons {
+	display: flex;
+}
+
+.nav-button,
+.lang-button {
+	background-color: #444;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.nav-button:hover,
+.lang-button:hover {
+	background-color: #555;
+}
+
+.nav-button-active {
+	border: 1px solid green;
+}
+
+/* MovieCard.css */
+
+.movie-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	overflow: hidden;
+	margin: 10px;
+	width: 200px;
+	background-color: #fff;
+}
+
+.movie-image {
+	width: 100%;
+	height: auto;
+}
+
+.movie-details {
+	padding: 10px;
+	text-align: center;
+}
+
+.movie-name {
+	font-size: 1.2em;
+	margin: 10px 0;
+}
+
+.watchlist-button {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.watchlist-button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+.watchlist-button:hover:not(:disabled) {
+	background-color: #0056b3;
+}
+
+/* MovieList.css */
+
+.movie-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
+	background-color: #f9f9f9;
+}
