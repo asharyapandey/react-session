@@ -1,6 +1,8 @@
 import MovieCard from "./MovieCard";
 import { Lang, Movie, Nav } from "../types";
 
+import styles from "./Movielist.module.css";
+
 interface MovieListProps {
 	movies: Movie[];
 	onAddToWatchList: (movie: Movie) => void;
@@ -19,7 +21,7 @@ const MovieList = ({
 	const list = nav === Nav.MovieList ? movies : watchList;
 
 	return (
-		<div className="movie-list">
+		<div className={styles.movie_list}>
 			{list.map((movie) => (
 				<MovieCard
 					key={movie.id}

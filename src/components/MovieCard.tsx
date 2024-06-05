@@ -1,5 +1,6 @@
 import language from "../language";
 import { Lang, Movie } from "../types";
+import Button from "./Button";
 
 interface MovieCardProps {
 	movie: Movie;
@@ -23,15 +24,14 @@ const MovieCard = ({
 			/>
 			<div className="movie-details">
 				<h3 className="movie-name">{movie.title}</h3>
-				<button
-					className="watchlist-button"
+				<Button
 					onClick={() => onAddToWatchList(movie)}
 					disabled={isInWatchList}
 				>
 					{isInWatchList
 						? language[lang].REMOVE_WATCHLIST
 						: language[lang].TO_WATCHLIST}
-				</button>
+				</Button>
 			</div>
 		</div>
 	);

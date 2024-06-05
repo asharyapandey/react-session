@@ -33,7 +33,7 @@ const Header = ({ nav, changeNav, lang, changeLang }: Props) => {
 					}`}
 					onClick={onMovieListClick}
 				>
-					{language[lang].MOVIE_LIST}
+					{language[lang].WATCH_LIST}
 				</button>
 				<button
 					className={`nav-button ${
